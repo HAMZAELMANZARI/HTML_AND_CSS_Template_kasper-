@@ -493,7 +493,7 @@ header nav .form i {
 /* End Portfolio */
 /* Start Video */
 .video {
-    position: absolute;
+    position: relative;
 }
 .video::before {
     content: "";
@@ -537,4 +537,23 @@ header nav .form i {
     border: none;
 }
 /* End Video */
+/* Start About */
+.about {
+    padding-top: var(--section-padding);
+    overflow: hidden;
+    text-align: center;
+}
+.about img {
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+    max-width: 100%;
+}
+@media (max-width: 767px){
+    .about img {
+        bottom: -60px;
+        margin-top: -60px;
+    }
+}
+/* End About */
 
